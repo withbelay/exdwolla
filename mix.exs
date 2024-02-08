@@ -10,7 +10,7 @@ defmodule Dwolla.Mixfile do
       app: :dwolla,
       version: "1.0.1",
       description: @description,
-      elixir: "~> 1.5",
+      elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       deps: deps(),
@@ -30,7 +30,7 @@ defmodule Dwolla.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 1.5"},
+      {:httpoison, "~> 2.0"},
       {:poison, "~> 4.0"},
       {:recase, "~> 0.6"},
       {:bypass, "~> 1.0", only: [:test]},
